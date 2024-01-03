@@ -142,6 +142,7 @@
                 </executions>
                 <configuration>
                     <mainClass>com.cogitosum.MainClass</mainClass>
+                    <finalName>app</finalName>
                 </configuration>
             </plugin>
         </plugins>
