@@ -10,6 +10,8 @@ import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import javax.crypto.SecretKey;
@@ -25,8 +27,11 @@ import java.util.concurrent.Future;
 
 @RestController
 public class HelloController {
+
+    Logger logger = LoggerFactory.getLogger(HelloController.class);
     @GetMapping("/")
     public String index() {
+        logger.info("INFO");
         return "Greetings from Spring Boot!";
     }
 
