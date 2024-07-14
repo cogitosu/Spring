@@ -17,6 +17,14 @@
         <spring-security.version>6.2.1</spring-security.version>
         <spring.version>6.1.2</spring.version>
     </properties>
+
+    <scm>
+        <connection>scm:git:https://github.com/cogitosun/Spring.git</connection>
+        <developerConnection>scm:git:https://github.com/cogitosun/Spring.git</developerConnection>
+        <url>https://github.com/cogitosun/Spring</url>
+        <tag>HEAD</tag>
+    </scm>          
+         
     <modules>
          <module>spring-endpoints</module>    
          <module>spring-container</module>
