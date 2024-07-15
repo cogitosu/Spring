@@ -3,11 +3,6 @@ pipeline {
         docker { image 'maven:3.9.8-eclipse-temurin-21-alpine' } 
     }
     stages {
-        stage('Initialize') {
-            steps {
-
-            }
-        }
         stage('build') {
             steps {
                  script {
